@@ -30,8 +30,8 @@ jobs:
           ref: master
         #      ↑↑↑ 改成你的分支名, 一般是master
 
-      - name: Initialization environment
-          env:
+     - name: 安装编译
+        env:
           DEBIAN_FRONTEND: noninteractive
         run: |
           echo "Deleting files, please wait ..."
@@ -46,6 +46,7 @@ jobs:
           sudo -E apt-get -qq clean
           curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
           sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
