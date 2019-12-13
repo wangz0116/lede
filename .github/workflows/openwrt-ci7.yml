@@ -9,7 +9,7 @@
 
 name: OpenWrt-第7次
 
-  on:
+on:
   push:
     branches: 
       - master
