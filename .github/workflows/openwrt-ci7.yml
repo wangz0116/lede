@@ -53,8 +53,7 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/pymumu/smartdns.git
-          git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
-          get clone https://github.com/LuttyYang/luci-theme-material.git
+         
           
    
 
@@ -170,8 +169,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-netgear=y
-          CONFIG_PACKAGE_luci-theme-atmaterial=y
-          CONFIG_PACKAGE_luci-theme-material=y
+         
           
           
           EOF
